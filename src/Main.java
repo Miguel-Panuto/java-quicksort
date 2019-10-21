@@ -1,5 +1,4 @@
-import javax.swing.*;
-
+import javax.swing.JOptionPane;
 
 public class Main
 {
@@ -8,7 +7,7 @@ public class Main
         int[] vals;
         while (true)
         {
-            String[] s = JOptionPane.showInputDialog("Insira o valor separados por ',': ").split(",");
+            String[] s = JOptionPane.showInputDialog("Insira o valor separados por ',' : ").split(",");
             vals = new int[s.length];
             for (int i = 0; i < s.length; i++)
             {
@@ -24,7 +23,7 @@ public class Main
             }
             break;
         }
-        vals = QuickSortTest.quicksort(vals, 0, vals.length);
+        vals = QuickSort.quicksort(vals, 0, vals.length);
         for (int i = 0; i < vals.length; i++)
         {
             System.out.println(vals[i]);
